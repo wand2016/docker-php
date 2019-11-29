@@ -1,11 +1,11 @@
 server {
     listen 80;
-    root /var/www/public;
+    root /var/www/{{ var "DOCUMENT_ROOT" }};
     index index.php;
     charset utf-8;
 
     location / {
-        root /var/www/public;
+        root /var/www/{{ var "DOCUMENT_ROOT" }};
         try_files $uri $uri/ /index.php$is_args$args;
     }
 
