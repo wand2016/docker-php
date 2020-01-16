@@ -32,6 +32,7 @@ services:
     environment:
       - TZ=${TZ}
       - DOCUMENT_ROOT=${DOCUMENT_ROOT}
+    working_dir: /var/www/${DOCUMENT_ROOT}
 
   db:
     image: mysql:8.0
