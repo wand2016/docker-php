@@ -5,6 +5,7 @@ services:
       context: ./docker/php
       args:
         - TZ=${TZ}
+        - IMAGE_PHP_VERSION=${IMAGE_PHP_VERSION}
     volumes:
       - ${APP_DIR}:/var/www
       - ./log/php:/var/log/php

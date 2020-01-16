@@ -1,4 +1,5 @@
-FROM php:7.4.0-fpm-alpine
+ARG IMAGE_PHP_VERSION
+FROM php:${IMAGE_PHP_VERSION}-fpm-alpine
 
 LABEL maintainer "D.Horiyama"
 
