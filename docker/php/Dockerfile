@@ -52,4 +52,6 @@ ENTRYPOINT [\
     "docker-php-entrypoint" \
 ]
 
+WORKDIR /var/www
+
 CMD ["php-fpm"]
